@@ -5,8 +5,8 @@ Run from the awesome-rust 2 directory:
 
     python3 scripts/compute_manual_analysis_results.py
 
-By default this reads finished repositories from batches.json, loads each
-repo-local manual-analysis-template.json, and writes CSV files to:
+By default this reads finished repositories from manual-analysis-templates/batches.json,
+loads each manual-analysis-template.json, and writes CSV files to:
 
     analysis-results/manual-analysis/
 """
@@ -71,16 +71,25 @@ def format_pearson(value: float | None) -> str:
     return "" if value is None else f"{value:.2f}"
 
 
-def repo_path(root: Path, repo: str, manual_file: str | None) -> Path:
+def batches_path(root: Path) -> Path:
+    nested = root / "manual-analysis-templates" / "batches.json"
+    if nested.exists():
+        return nested
+    return root / "batches.json"
+
+
+def manual_template_path(root: Path, batch_no: int, repo: str, manual_file: str | None) -> Path:
+    copied = root / "manual-analysis-templates" / f"batch{batch_no}__{repo.replace('/', '__')}__manual-analysis-template.json"
+    if copied.exists():
+        return copied
+
     if manual_file:
-        candidate = root / "repos" / repo / manual_file
-    else:
-        candidate = root / "repos" / repo / "manual-analysis-template.json"
-    return candidate
+        return root / "repos" / repo / manual_file
+    return root / "repos" / repo / "manual-analysis-template.json"
 
 
 def load_rows(root: Path, include_pending: bool) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    batches = json.loads((root / "batches.json").read_text())
+    batches = json.loads(batches_path(root).read_text())
     file_rows: list[dict[str, Any]] = []
     repo_rows: list[dict[str, Any]] = []
 
@@ -90,7 +99,7 @@ def load_rows(root: Path, include_pending: bool) -> tuple[list[dict[str, Any]], 
             if not include_pending and repo_entry.get("analysis_status") != "finished":
                 continue
 
-            manual_path = repo_path(root, repo_entry["repo"], repo_entry.get("manual_analysis_file"))
+            manual_path = manual_template_path(root, batch_no, repo_entry["repo"], repo_entry.get("manual_analysis_file"))
             if not manual_path.exists():
                 continue
 

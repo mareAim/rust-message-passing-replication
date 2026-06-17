@@ -77,6 +77,23 @@ def read_json(path: Path) -> Any:
     return json.loads(path.read_text())
 
 
+def batches_path(root: Path) -> Path:
+    nested = root / "manual-analysis-templates" / "batches.json"
+    if nested.exists():
+        return nested
+    return root / "batches.json"
+
+
+def manual_template_path(root: Path, batch_no: int, repo: str, manual_file: str | None) -> Path:
+    copied = root / "manual-analysis-templates" / f"batch{batch_no}__{repo.replace('/', '__')}__manual-analysis-template.json"
+    if copied.exists():
+        return copied
+
+    if manual_file:
+        return root / "repos" / repo / manual_file
+    return root / "repos" / repo / "manual-analysis-template.json"
+
+
 def git_show(repo_dir: Path, commit: str, file_path: str) -> str:
     result = subprocess.run(
         ["git", "-C", str(repo_dir), "show", f"{commit}:{file_path}"],
@@ -119,7 +136,7 @@ def main() -> None:
 
     root = args.root.resolve()
     out_dir = args.out if args.out.is_absolute() else root / args.out
-    batches = read_json(root / "batches.json")
+    batches = read_json(batches_path(root))
 
     file_rows: list[dict[str, Any]] = []
     summary = Counter()
@@ -132,7 +149,7 @@ def main() -> None:
             repo = repo_entry["repo"]
             repo_dir = root / "repos" / repo
             manual_file = repo_entry.get("manual_analysis_file") or "manual-analysis-template.json"
-            template_path = repo_dir / manual_file
+            template_path = manual_template_path(root, batch["batch"], repo, manual_file)
             if not template_path.exists():
                 continue
 
