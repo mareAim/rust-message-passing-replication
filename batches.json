@@ -66,8 +66,7 @@
           "notes": ""
         }
       ],
-      "batch_analysis_status": "finished",
-      "notes": "All repositories had moderate message-passing importance. The dominant communication structure label was mixed across all four repositories. Observed role labels were data_transport, mixed, and cross_async_task_communication."
+      "batch_analysis_status": "finished"
     },
     {
       "batch": 2,
@@ -130,8 +129,7 @@
           "manual_analysis_file": "manual-analysis-template.json"
         }
       ],
-      "batch_analysis_status": "finished",
-      "notes": "All repositories again had mixed primary communication structure. The new repository-level role label observed in this batch was notification_or_signaling. Message-passing importance was mostly moderate, with RuView marked minor because only two of five sampled files contained relevant message-passing usage."
+      "batch_analysis_status": "finished"
     },
     {
       "batch": 3,
@@ -190,8 +188,7 @@
           "notes": ""
         }
       ],
-      "batch_analysis_status": "finished",
-      "notes": ""
+      "batch_analysis_status": "finished"
     },
     {
       "batch": 4,
@@ -254,8 +251,7 @@
           "manual_analysis_file": "manual-analysis-template.json"
         }
       ],
-      "batch_analysis_status": "finished",
-      "notes": ""
+      "batch_analysis_status": "finished"
     },
     {
       "batch": 5,
@@ -318,8 +314,7 @@
           "manual_analysis_file": "manual-analysis-template.json"
         }
       ],
-      "batch_analysis_status": "finished",
-      "notes": ""
+      "batch_analysis_status": "finished"
     }
   ]
 }
