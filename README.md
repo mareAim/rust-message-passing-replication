@@ -13,6 +13,8 @@ This repository contains the replication package for the empirical analysis of m
 - `scripts/count_channel_primitives_in_samples.py`: counts channel creation sites in sampled
   files.
 - `analysis-results/manual-analysis/`: generated CSV files used for the reported results.
+- `methodology/scripts/`: scripts used during dataset construction, sampling, classification, and ranking.
+- `methodology/intermediate-json/`: intermediate JSON files from repository selection, star lookup, filtering, and category ranking.
 
 ## Reproducing Manual-Analysis Results
 
@@ -51,3 +53,9 @@ python3 scripts/count_channel_primitives_in_samples.py --root .
 
 The analysis is based on 20 repositories across five batches. The final analysis uses 76
   analyzable sampled files; 11 sampled files were marked as not relevant.
+
+## Methodology Files
+
+The `methodology/` directory documents the dataset-construction pipeline used before manual analysis. It includes scripts for filtering Awesome Rust repositories, fetching GitHub stars, running the LLM-assisted message-passing review, ranking repositories by category, and selecting sampled files.
+
+The intermediate JSON files are included to show how the selected batches relate to the larger candidate set. The final reported results can be reproduced from `batches.json`, `manual-analysis-templates/`, and the scripts in `scripts/`.

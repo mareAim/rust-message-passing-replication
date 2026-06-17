@@ -1,0 +1,90 @@
+{
+  "mpsc": {
+    "rustdesk/rustdesk": {
+      "stars": 113156,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "denoland/deno": {
+      "stars": 106565,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "alacritty/alacritty": {
+      "stars": 63749,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "helix-editor/helix": {
+      "stars": 44166,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "sharkdp/fd": {
+      "stars": 42752,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    }
+  },
+  "mpmc_pub_sub": {
+    "zed-industries/zed": {
+      "stars": 80307,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "ruvnet/RuView": {
+      "stars": 50752,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "aaif-goose/goose": {
+      "stars": 43542,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "fish-shell/fish-shell": {
+      "stars": 33325,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "atuinsh/atuin": {
+      "stars": 29524,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    }
+  },
+  "mpmc_competing_consumers": {
+    "astral-sh/ruff": {
+      "stars": 47303,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "spacedriveapp/spacedrive": {
+      "stars": 37923,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "sxyazi/yazi": {
+      "stars": 37213,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "wasmerio/wasmer": {
+      "stars": 20639,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "openobserve/openobserve": {
+      "stars": 18660,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    }
+  },
+  "oneshot": {
+    "warpdotdev/warp": {
+      "stars": 43007,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "linera-io/linera-protocol": {
+      "stars": 32126,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "wezterm/wezterm": {
+      "stars": 25816,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "biomejs/biome": {
+      "stars": 24497,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    },
+    "diem/diem": {
+      "stars": 16682,
+      "usage": "INSTRUMENTAL_TO_ARCHITECTURE"
+    }
+  }
+}
