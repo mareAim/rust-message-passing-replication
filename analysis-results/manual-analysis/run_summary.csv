@@ -1,0 +1,8 @@
+metric,value
+finished_repositories_loaded,20
+sampled_files_loaded,87
+analyzable_files_loaded,76
+not_relevant_files_loaded,11
+files_used_for_correlations,76
+include_not_relevant_for_correlations,false
+output_directory,/Users/mare/Downloads/awesome-rust 2/analysis-results/manual-analysis

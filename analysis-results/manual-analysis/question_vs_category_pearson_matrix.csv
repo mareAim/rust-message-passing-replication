@@ -1,0 +1,15 @@
+,category:mpmc_competing_consumers,category:mpmc_pub_sub,category:mpsc,category:oneshot
+q01_clear_receiver_owner,-0.21,0.06,0.07,0.08
+q02_sender_cloning,-0.16,0.03,0.18,-0.05
+q03_receiver_loop,-0.06,0.08,0.03,-0.04
+q04_mailbox_pattern,-0.27,0.04,0.22,0.01
+q05_fan_in,-0.10,0.01,0.08,0.00
+q06_fan_out,0.01,-0.05,0.00,0.03
+q07_worker_queue,0.03,-0.17,0.10,0.03
+q08_shutdown_signal,0.14,0.06,-0.08,-0.10
+q09_data_transport,-0.11,-0.03,0.20,-0.05
+q10_command_messages,-0.15,0.02,0.21,-0.07
+q11_notification_messages,-0.14,0.09,0.08,-0.03
+q12_background_dispatch,0.11,-0.01,0.08,-0.16
+q13_cross_thread_usage,-0.13,-0.09,0.24,-0.03
+q14_cross_async_task_usage,0.11,0.19,-0.35,0.06

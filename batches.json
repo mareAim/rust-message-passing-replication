@@ -1,0 +1,325 @@
+{
+  "purpose": "Batch plan for manual analysis. Each batch contains one repository from each message-passing category, using the category ranking from result.json.",
+  "source_file": "/Users/mare/Downloads/awesome-rust 2/result.json",
+  "categories": [
+    "mpsc",
+    "mpmc_pub_sub",
+    "mpmc_competing_consumers",
+    "oneshot"
+  ],
+  "batch_rule": "Batch n contains the rank-n repository from each category. At least two batches are analyzed; later batches are analyzed while new repository-level structure or role labels continue to appear, up to the full ranked pool.",
+  "batches": [
+    {
+      "batch": 1,
+      "selection_rule": "rank_aligned_one_repository_per_category",
+      "repositories": [
+        {
+          "category": "mpsc",
+          "rank_in_category": 1,
+          "repo": "rustdesk/rustdesk",
+          "stars": 113156,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "15-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "data_transport",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        },
+        {
+          "category": "mpmc_pub_sub",
+          "rank_in_category": 1,
+          "repo": "zed-industries/zed",
+          "stars": 80307,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "16-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        },
+        {
+          "category": "mpmc_competing_consumers",
+          "rank_in_category": 1,
+          "repo": "astral-sh/ruff",
+          "stars": 47303,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "16-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        },
+        {
+          "category": "oneshot",
+          "rank_in_category": 1,
+          "repo": "warpdotdev/warp",
+          "stars": 43007,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "18-05-26",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "cross_async_task_communication",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        }
+      ],
+      "batch_analysis_status": "finished",
+      "notes": "All repositories had moderate message-passing importance. The dominant communication structure label was mixed across all four repositories. Observed role labels were data_transport, mixed, and cross_async_task_communication."
+    },
+    {
+      "batch": 2,
+      "selection_rule": "rank_aligned_one_repository_per_category",
+      "repositories": [
+        {
+          "category": "mpsc",
+          "rank_in_category": 2,
+          "repo": "denoland/deno",
+          "stars": 106565,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "21-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "notification_or_signaling",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_pub_sub",
+          "rank_in_category": 2,
+          "repo": "ruvnet/RuView",
+          "stars": 50752,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "26-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "minor",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_competing_consumers",
+          "rank_in_category": 2,
+          "repo": "spacedriveapp/spacedrive",
+          "stars": 37923,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "27-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "notification_or_signaling",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "oneshot",
+          "rank_in_category": 2,
+          "repo": "linera-io/linera-protocol",
+          "stars": 32126,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "28-05-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "data_transport",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        }
+      ],
+      "batch_analysis_status": "finished",
+      "notes": "All repositories again had mixed primary communication structure. The new repository-level role label observed in this batch was notification_or_signaling. Message-passing importance was mostly moderate, with RuView marked minor because only two of five sampled files contained relevant message-passing usage."
+    },
+    {
+      "batch": 3,
+      "selection_rule": "rank_aligned_one_repository_per_category",
+      "repositories": [
+        {
+          "category": "mpsc",
+          "rank_in_category": 3,
+          "repo": "alacritty/alacritty",
+          "stars": 63749,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "01-06-2026",
+          "primary_communication_structure": "component_mailbox",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "central",
+          "notes": ""
+        },
+        {
+          "category": "mpmc_pub_sub",
+          "rank_in_category": 3,
+          "repo": "aaif-goose/goose",
+          "stars": 43542,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "02-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        },
+        {
+          "category": "mpmc_competing_consumers",
+          "rank_in_category": 3,
+          "repo": "sxyazi/yazi",
+          "stars": 37213,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "02-06-2026",
+          "primary_communication_structure": "clear_receiver_owner",
+          "primary_message_passing_role": "data_transport",
+          "message_passing_importance": "moderate",
+          "notes": "Manual analysis observed receiver cloning."
+        },
+        {
+          "category": "oneshot",
+          "rank_in_category": 3,
+          "repo": "wezterm/wezterm",
+          "stars": 25816,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "03-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": ""
+        }
+      ],
+      "batch_analysis_status": "finished",
+      "notes": ""
+    },
+    {
+      "batch": 4,
+      "selection_rule": "rank_aligned_one_repository_per_category",
+      "repositories": [
+        {
+          "category": "mpsc",
+          "rank_in_category": 4,
+          "repo": "helix-editor/helix",
+          "stars": 44166,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "10-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_pub_sub",
+          "rank_in_category": 4,
+          "repo": "fish-shell/fish-shell",
+          "stars": 33325,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "09-06-2026",
+          "primary_communication_structure": "none_observed",
+          "primary_message_passing_role": "none_observed",
+          "message_passing_importance": "minor",
+          "notes": "The fixed channel-keyword sampler found zero eligible production Rust files at the pinned commit. The LLM review described custom pub/sub-like notification mechanisms, but these did not match the Rust channel primitive sampling protocol.",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_competing_consumers",
+          "rank_in_category": 4,
+          "repo": "wasmerio/wasmer",
+          "stars": 20639,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "10-06-2026",
+          "primary_communication_structure": "clear_receiver_owner",
+          "primary_message_passing_role": "data_transport",
+          "message_passing_importance": "moderate",
+          "notes": "Manual analysis observed receiver cloning.",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "oneshot",
+          "rank_in_category": 4,
+          "repo": "biomejs/biome",
+          "stars": 24497,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "11-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        }
+      ],
+      "batch_analysis_status": "finished",
+      "notes": ""
+    },
+    {
+      "batch": 5,
+      "selection_rule": "rank_aligned_one_repository_per_category",
+      "repositories": [
+        {
+          "category": "mpsc",
+          "rank_in_category": 5,
+          "repo": "sharkdp/fd",
+          "stars": 42752,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "12-06-2026",
+          "primary_communication_structure": "fan_in",
+          "primary_message_passing_role": "data_transport",
+          "message_passing_importance": "central",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_pub_sub",
+          "rank_in_category": 5,
+          "repo": "atuinsh/atuin",
+          "stars": 29524,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "13-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "mpmc_competing_consumers",
+          "rank_in_category": 5,
+          "repo": "openobserve/openobserve",
+          "stars": 18660,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "14-06-2026",
+          "primary_communication_structure": "mixed",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "moderate",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        },
+        {
+          "category": "oneshot",
+          "rank_in_category": 5,
+          "repo": "diem/diem",
+          "stars": 16682,
+          "usage": "INSTRUMENTAL_TO_ARCHITECTURE",
+          "analysis_status": "finished",
+          "manual_analysis_date": "13-06-2026",
+          "primary_communication_structure": "fan_in",
+          "primary_message_passing_role": "mixed",
+          "message_passing_importance": "central",
+          "notes": "",
+          "manual_analysis_file": "manual-analysis-template.json"
+        }
+      ],
+      "batch_analysis_status": "finished",
+      "notes": ""
+    }
+  ]
+}

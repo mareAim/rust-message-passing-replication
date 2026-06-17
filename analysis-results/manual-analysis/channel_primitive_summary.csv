@@ -1,0 +1,13 @@
+primitive,count
+std_mpsc,7
+tokio_mpsc,32
+tokio_broadcast,3
+tokio_watch,12
+tokio_oneshot,31
+futures_mpsc,2
+futures_oneshot,4
+crossbeam_channel,1
+async_channel,5
+flume,0
+async_priority_channel,7
+total_channel_creation_sites,104

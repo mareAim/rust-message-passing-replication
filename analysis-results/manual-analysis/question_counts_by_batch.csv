@@ -1,0 +1,85 @@
+batch,question_id,question_name,true,false,missing,total
+1,q01_clear_receiver_owner,Receiver ownership,15,0,0,15
+1,q02_sender_cloning,Sender sharing,8,7,0,15
+1,q03_receiver_loop,Receiver loop,6,9,0,15
+1,q04_mailbox_pattern,Mailbox,4,11,0,15
+1,q05_fan_in,Fan-in,3,12,0,15
+1,q06_fan_out,Fan-out,5,10,0,15
+1,q07_worker_queue,Worker queue,3,12,0,15
+1,q08_shutdown_signal,Shutdown/readiness/cancellation,6,9,0,15
+1,q09_data_transport,Data transport,13,2,0,15
+1,q10_command_messages,Command messages,8,7,0,15
+1,q11_notification_messages,Notification/signals,10,5,0,15
+1,q12_background_dispatch,Background dispatch,4,11,0,15
+1,q13_cross_thread_usage,Cross-thread,4,11,0,15
+1,q14_cross_async_task_usage,Cross-async-task,9,6,0,15
+2,q01_clear_receiver_owner,Receiver ownership,15,0,0,15
+2,q02_sender_cloning,Sender sharing,4,11,0,15
+2,q03_receiver_loop,Receiver loop,8,7,0,15
+2,q04_mailbox_pattern,Mailbox,4,11,0,15
+2,q05_fan_in,Fan-in,0,15,0,15
+2,q06_fan_out,Fan-out,2,13,0,15
+2,q07_worker_queue,Worker queue,3,12,0,15
+2,q08_shutdown_signal,Shutdown/readiness/cancellation,4,11,0,15
+2,q09_data_transport,Data transport,14,1,0,15
+2,q10_command_messages,Command messages,1,14,0,15
+2,q11_notification_messages,Notification/signals,11,4,0,15
+2,q12_background_dispatch,Background dispatch,7,8,0,15
+2,q13_cross_thread_usage,Cross-thread,3,12,0,15
+2,q14_cross_async_task_usage,Cross-async-task,8,7,0,15
+3,q01_clear_receiver_owner,Receiver ownership,19,0,0,19
+3,q02_sender_cloning,Sender sharing,7,12,0,19
+3,q03_receiver_loop,Receiver loop,11,8,0,19
+3,q04_mailbox_pattern,Mailbox,6,13,0,19
+3,q05_fan_in,Fan-in,5,14,0,19
+3,q06_fan_out,Fan-out,0,19,0,19
+3,q07_worker_queue,Worker queue,3,16,0,19
+3,q08_shutdown_signal,Shutdown/readiness/cancellation,7,12,0,19
+3,q09_data_transport,Data transport,18,1,0,19
+3,q10_command_messages,Command messages,8,11,0,19
+3,q11_notification_messages,Notification/signals,13,6,0,19
+3,q12_background_dispatch,Background dispatch,14,5,0,19
+3,q13_cross_thread_usage,Cross-thread,9,10,0,19
+3,q14_cross_async_task_usage,Cross-async-task,11,8,0,19
+4,q01_clear_receiver_owner,Receiver ownership,13,0,0,13
+4,q02_sender_cloning,Sender sharing,6,7,0,13
+4,q03_receiver_loop,Receiver loop,7,6,0,13
+4,q04_mailbox_pattern,Mailbox,6,7,0,13
+4,q05_fan_in,Fan-in,5,8,0,13
+4,q06_fan_out,Fan-out,2,11,0,13
+4,q07_worker_queue,Worker queue,2,11,0,13
+4,q08_shutdown_signal,Shutdown/readiness/cancellation,5,8,0,13
+4,q09_data_transport,Data transport,11,2,0,13
+4,q10_command_messages,Command messages,4,9,0,13
+4,q11_notification_messages,Notification/signals,6,7,0,13
+4,q12_background_dispatch,Background dispatch,6,7,0,13
+4,q13_cross_thread_usage,Cross-thread,3,10,0,13
+4,q14_cross_async_task_usage,Cross-async-task,6,7,0,13
+5,q01_clear_receiver_owner,Receiver ownership,13,1,0,14
+5,q02_sender_cloning,Sender sharing,11,3,0,14
+5,q03_receiver_loop,Receiver loop,10,4,0,14
+5,q04_mailbox_pattern,Mailbox,6,8,0,14
+5,q05_fan_in,Fan-in,10,4,0,14
+5,q06_fan_out,Fan-out,3,11,0,14
+5,q07_worker_queue,Worker queue,4,10,0,14
+5,q08_shutdown_signal,Shutdown/readiness/cancellation,7,7,0,14
+5,q09_data_transport,Data transport,12,2,0,14
+5,q10_command_messages,Command messages,6,8,0,14
+5,q11_notification_messages,Notification/signals,11,3,0,14
+5,q12_background_dispatch,Background dispatch,8,6,0,14
+5,q13_cross_thread_usage,Cross-thread,6,8,0,14
+5,q14_cross_async_task_usage,Cross-async-task,9,5,0,14
+all,q01_clear_receiver_owner,Receiver ownership,75,1,0,76
+all,q02_sender_cloning,Sender sharing,36,40,0,76
+all,q03_receiver_loop,Receiver loop,42,34,0,76
+all,q04_mailbox_pattern,Mailbox,26,50,0,76
+all,q05_fan_in,Fan-in,23,53,0,76
+all,q06_fan_out,Fan-out,12,64,0,76
+all,q07_worker_queue,Worker queue,15,61,0,76
+all,q08_shutdown_signal,Shutdown/readiness/cancellation,29,47,0,76
+all,q09_data_transport,Data transport,68,8,0,76
+all,q10_command_messages,Command messages,27,49,0,76
+all,q11_notification_messages,Notification/signals,51,25,0,76
+all,q12_background_dispatch,Background dispatch,39,37,0,76
+all,q13_cross_thread_usage,Cross-thread,25,51,0,76
+all,q14_cross_async_task_usage,Cross-async-task,43,33,0,76
