@@ -12,8 +12,6 @@ def enforce_max_repos(data: dict, max_per_category: int, exempt_categories: set[
             result[category] = repos
             continue
 
-        # Keeps original ordering from the JSON.
-        # If you want top-N by stars instead, replace with sorted(...).
         limited_items = list(repos.items())[:max_per_category]
         result[category] = dict(limited_items)
 
